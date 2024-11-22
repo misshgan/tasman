@@ -1,0 +1,25 @@
+/* Base
+/* ---------------------------------------------------------- */
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+body.home-template {
+    background-color: var(--color-green);
+}
+
+body {
+    padding-top: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
