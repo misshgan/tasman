@@ -1,0 +1,38 @@
+.main-title {
+    max-width: 84.5rem;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: clamp(5.6rem, 2.743rem + 4.762vw, 9.6rem);
+    font-weight: 400;
+    line-height: 85%; /* 81.6px */
+    letter-spacing: clamp(-0.112rem, 0.055rem + 0.095vw, -0.192rem);
+}
+
+.paragraph {
+    font-family: var(--font-sans-serif);
+    font-size: clamp(2rem, 1.714rem + 0.476vw, 2.4rem);
+    font-weight: 400;
+    line-height: clamp(120%, 112.857rem + 11.905vw, 130%); /* 31.2px */
+}
+
+.paragraph.paragraph--smaller {
+    font-size: clamp(1.6rem, 1.314rem + 0.476vw, 2rem);
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: clamp(4rem, 2.857rem + 1.905vw, 5.6rem);
+    font-weight: 400;
+    line-height: 85%; /* 47.6px */
+    letter-spacing: clamp(-0.8px, 0.571rem + 0.381vw, -1.12px);
+}
+
+.block-title {
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 85%; /* 34px */
+    letter-spacing: -0.8px;
+}
