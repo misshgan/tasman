@@ -1,0 +1,21 @@
+.button,
+a.button {
+    padding: 1.35rem 2.8rem;
+    border-radius: .8rem;
+
+    font-family: var(--font-mono);
+    font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    width: max-content;
+
+    &--black {
+        color: var(--color-cream);
+        background-color: var(--color-black);
+    }
+
+    &--red {
+        background-color: var(--color-red);
+        border: 1px solid var(--color-cream);
+    }
+}
