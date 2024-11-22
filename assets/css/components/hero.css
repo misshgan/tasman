@@ -1,0 +1,32 @@
+.hero {
+    margin-top: 2rem;
+
+    &--home {
+        .container {
+            height: calc(100vh - clamp(2.5rem, 2rem + 0.833vw, 3.2rem) - 8.8rem);
+            border-radius: 1.2rem;
+            border: 1px solid var(--border-color-black);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: clamp(2.5rem, 2rem + 0.833vw, 3.2rem);
+
+            background-image: url(/assets/images/home/hero-background.svg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .paragraph {
+            max-width: 68rem;
+            margin-top: clamp(3.2rem, 2.057rem + 1.905vw, 4.8rem);
+            text-align: center;
+        }
+
+        .button {
+            margin-top: 2.4rem;
+        }
+    }
+}
