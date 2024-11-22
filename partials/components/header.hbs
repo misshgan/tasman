@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="wrapper">
+        {{#is 'index'}}
+            <a href="/">
+                {{> icons/logo classes='logo'}}
+            </a>
+        {{else}}
+            {{> icons/logo classes='logo'}}
+        {{/is}}
+
+        {{navigation classes='navigation--header'}}
+
+        <a class="button button--black" href="/">GET IN TOUCH</a>
+    </div>
+</header>
