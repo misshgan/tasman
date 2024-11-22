@@ -1,0 +1,18 @@
+.header {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 3.6rem;
+    }
+
+    .logo {
+        height: clamp(2rem, 1.429rem + 0.952vw, 2.8rem);
+        width: auto;
+    }
+
+    .navigation {
+        margin-left: auto;
+    }
+    .button {
+    }    
+}
