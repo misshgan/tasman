@@ -11,10 +11,19 @@
     --color-success: #80b912;
     --color-error: #f05230;
 
+    --color-green: #90B39D;
+    --color-cream: #FFF9EB;
+    --color-red: #A93427;
+    --color-blue: #526476;
+    --color-black: #121212;
+
+    --border-color-black: #1212121A;
+    --border-color-cream: #FFF9EB66;
+
     /* Fonts */
-    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
-    --font-mono: Menlo, Courier, monospace;
+    --font-sans-serif: 'Helvetica', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: 'Portrait', Georgia, Times, serif;
+    --font-mono: 'Roboto Mono', Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;
     --font-bold: 700;
@@ -31,5 +40,4 @@
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.5rem;
-
 }
