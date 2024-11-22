@@ -8,9 +8,27 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
 
+/* Fonts */
+@import 'fonts.css';
+
+/* Base */
+@import 'base.css';
+
 /* Base components */
 @import "vars.css";
-
+@import 'components/global.css';
 
 /* Ghost components */
 @import "ghost/content.css";
+
+/* Elements */
+@import 'elements/text.css';
+
+/* Template components */
+@import 'components/header.css';
+@import 'components/navigation.css';
+@import 'components/button.css';
+@import 'components/hero.css';
+
+/* Pages */
+@import 'pages/home.css';
