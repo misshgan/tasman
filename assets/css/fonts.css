@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url(/assets/fonts/Helvetica.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Portrait';
+    src: url(/assets/fonts/Portrait-Regular-Web.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(/assets/fonts/RobotoMono-Regular.ttf);
+    font-weight: 400;
+}
