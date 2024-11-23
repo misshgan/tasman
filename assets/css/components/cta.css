@@ -1,0 +1,26 @@
+.cta {
+    padding: clamp(14.4rem, 11.829rem + 4.286vw, 18rem) 0;
+
+    &.cta--blue {
+        background-color: var(--color-blue);
+        color: var(--color-cream);
+        background-image: url(/assets/images/cta/background-blue.svg);
+        background-position: center;
+        background-size: cover;
+
+        .button {
+            border-color: transparent;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 3.2rem;
+        max-width: 1210px;
+    }
+    .section-title {
+        text-transform: uppercase;
+    }
+}
