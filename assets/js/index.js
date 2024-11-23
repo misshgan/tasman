@@ -90,3 +90,29 @@ function handleDynamicIconsSwitch() {
 }
 
 handleDynamicIconsSwitch();
+
+
+function handleLogoScroll() {
+    const track = document.querySelector(".icon-track");
+
+    const icons = Array.from(track.children);
+    icons.forEach((icon) => {
+        const clone = icon.cloneNode(true);
+        track.appendChild(clone);
+    });
+
+    let scrollPos = 0;
+
+    function animateIcons() {
+        scrollPos -= 0.75;
+        if (scrollPos <= -track.scrollWidth / 2) {
+            scrollPos = 0;
+        }
+        track.style.transform = `translateX(${scrollPos}px)`;
+        requestAnimationFrame(animateIcons);
+    }
+
+    animateIcons();
+}
+
+handleLogoScroll();
