@@ -29,6 +29,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import 'components/navigation.css';
 @import 'components/button.css';
 @import 'components/hero.css';
+@import 'components/cta.css';
 
 /* Pages */
 @import 'pages/home.css';
