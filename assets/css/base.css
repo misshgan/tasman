@@ -10,8 +10,8 @@ body.home-template {
     background-color: var(--color-green);
 }
 
-body {
-    padding-top: 2rem;
+body.about-template {
+    background-color: var(--color-green);
 }
 
 @keyframes fadeIn {
