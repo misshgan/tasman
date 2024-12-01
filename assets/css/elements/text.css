@@ -6,6 +6,7 @@
     font-weight: 400;
     line-height: 85%; /* 81.6px */
     letter-spacing: clamp(-0.112rem, 0.055rem + 0.095vw, -0.192rem);
+    text-transform: uppercase;
 }
 
 .paragraph {
