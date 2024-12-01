@@ -1,6 +1,17 @@
 .cta {
     padding: clamp(14.4rem, 11.829rem + 4.286vw, 18rem) 0;
 
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 3.2rem;
+        max-width: 1210px;
+    }
+    .section-title {
+        text-transform: uppercase;
+    }
+
     &.cta--blue {
         background-color: var(--color-blue);
         color: var(--color-cream);
@@ -13,14 +24,23 @@
         }
     }
 
-    .wrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        row-gap: 3.2rem;
-        max-width: 1210px;
+    &.cta--green {
+        background-color: var(--color-green);
+        color: var(--color-black);
+        background-image: url(/assets/images/cta/background-green.svg);
+        background-position: center;
+        background-size: cover;
     }
-    .section-title {
-        text-transform: uppercase;
+
+    &.cta--red {
+        background-color: var(--color-red);
+        color: var(--color-cream);
+        background-image: url(/assets/images/cta/background-red.svg);
+        background-position: center;
+        background-size: cover;
+
+        .button.button--cream {
+            border-color: var(--color-cream);
+        }
     }
 }
