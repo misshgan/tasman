@@ -1,4 +1,10 @@
 .header {
+    padding: clamp(1.2rem, 0.629rem + 0.952vw, 2rem) 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
     .wrapper {
         display: flex;
         align-items: center;
@@ -15,4 +21,73 @@
     }
     .button {
     }    
+}
+
+body.home-template .header {
+    background-color: var(--color-green);
+
+    .logo path {
+        fill: var(--color-black);
+    }
+}
+
+body.about-template .header {
+    background-color: transparent;
+    transition: all .4s;
+
+    &.moving {
+        background-color: var(--color-blue);
+    }
+    
+    .navigation__item a {
+        color: var(--color-cream);
+    }
+
+    .logo path {
+        fill: var(--color-cream);
+    }
+
+    .button.button--black {
+        color: var(--color-black);
+        background-color: var(--color-cream);
+    }
+}
+
+body.services-template .header {
+    background-color: transparent;
+    transition: all .4s;
+
+    &.moving {
+        background-color: var(--color-red);
+    }
+    
+    .navigation__item a {
+        color: var(--color-cream);
+    }
+
+    .logo path {
+        fill: var(--color-cream);
+    }
+
+    .button.button--black {
+        color: var(--color-black);
+        background-color: var(--color-cream);
+    }
+}
+
+body.case-studies-template .header {
+    background-color: transparent;
+    transition: all .4s;
+
+    &.moving {
+        background-color: var(--color-cream);
+    }
+    
+    .navigation__item a {
+        color: var(--color-black);
+    }
+
+    .logo path {
+        fill: var(--color-black);
+    }
 }
