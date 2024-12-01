@@ -1,0 +1,122 @@
+/* Roadmap */
+
+.roadmap {
+    padding: clamp(9.6rem, 7.886rem + 2.857vw, 12rem) 0;
+    background-image: url(/assets/images/about/roadmap-background.svg);
+    background-position: center;
+    background-size: cover;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1210px;
+    }
+    .block-title {
+    }
+    .paragraph {
+    }
+    .paragraph--smaller {
+    }
+
+    &__img {
+        width: max-content;
+
+        padding: clamp(1.2rem, 0.629rem + 0.952vw, 2rem);
+        border-radius: 16px;
+        border: 1px solid var(--border-color-black);
+        background: var(--color-green);
+    }
+    &__text {
+        max-width: 44.6rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4.8rem;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            row-gap: clamp(2.4rem, 1.829rem + 0.952vw, 3.2rem);
+        }
+
+        & > div:not(:last-child) {
+            padding-bottom: 4.8rem;
+            position: relative;
+        }
+
+        & > div:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            background-color: var(--color-black);
+            opacity: 0.4;
+        }
+    }
+}
+
+/* Team */
+
+.team {
+    background-color: var(--color-cream);
+    padding: clamp(9.6rem, 6.457rem + 5.238vw, 14rem) 0 clamp(9.6rem, 7.886rem + 2.857vw, 12rem);
+    background-image: url(/assets/images/about/team-background.svg);
+    background-repeat: repeat;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 1480px;
+    }
+    .paragraph {
+        margin-top: clamp(2.4rem, 1.829rem + 0.952vw, 3.2rem);
+        max-width: 68rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 7.8rem;
+        row-gap: 4.8rem;
+        width: 100%;
+    }
+    &__member {
+        margin-top: clamp(3.2rem, 2.057rem + 1.905vw, 4.8rem);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+            width: 21.3rem;
+            height: 21.3rem;
+        }
+
+        span {
+            display: inline-block;
+            margin-top: 1.6rem;
+
+            font-family: var(--font-mono);
+            font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+            font-weight: 400;
+            letter-spacing: clamp(1.4px, 1.257rem + 0.238vw, 1.6px);
+            text-transform: uppercase;
+        }
+
+        small {
+            margin-top: .8rem;
+
+            font-family: var(--font-sans-serif);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+}
