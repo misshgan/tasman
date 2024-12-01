@@ -30,6 +30,12 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import 'components/button.css';
 @import 'components/hero.css';
 @import 'components/cta.css';
+@import 'components/footer.css';
+@import 'components/accordion.css';
+@import 'components/table.css';
 
 /* Pages */
 @import 'pages/home.css';
+@import 'pages/about.css';
+@import 'pages/services.css';
+@import 'pages/case-studies.css';
