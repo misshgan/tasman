@@ -1,0 +1,85 @@
+/* People */
+
+.people {
+    padding: clamp(9.6rem, 6.457rem + 5.238vw, 14rem) 0
+        clamp(9.6rem, 7.886rem + 2.857vw, 12rem);
+    background-color: var(--color-cream);
+    background-image: url(/assets/images/services/people-background.svg);
+    background-repeat: repeat;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1380px;
+    }
+
+    .paragraph {
+        margin-top: clamp(2.4rem, 1.829rem + 0.952vw, 3.2rem);
+        text-align: center;
+        max-width: 68rem;
+    }
+}
+
+/* Technology */
+
+.technology {
+    padding: clamp(9.6rem, 7.886rem + 2.857vw, 12rem) 0;
+    background-color: var(--color-green);
+    background-image: url(/assets/images/services/technology-background.svg);
+    background-size: cover;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1210px;
+    }
+
+    &__img {
+        background: var(--color-green);
+        border: 1px solid var(--border-color-black);
+        border-radius: 1.6rem;
+        padding: clamp(1.2rem, .629rem + .952vw, 2rem);
+        width: max-content;
+    }
+    &__text {
+        max-width: 44.6rem;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: clamp(2.4rem, 1.829rem + 0.952vw, 3.2rem);
+    }
+    
+    .section-title {
+        text-align: start;
+    }
+}
+
+
+/* Insights */
+
+.insights {
+    padding: clamp(9.6rem, 6.457rem + 5.238vw, 14rem) 0 clamp(9.6rem, 7.886rem + 2.857vw, 12rem);
+    background-color: var(--color-blue);
+    background-image: url(/assets/images/services/insights-background.svg);
+    background-size: cover;
+
+    .wrapper {
+        color: var(--color-cream);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .section-title {
+    }
+    .paragraph {
+        margin-top: clamp(2.4rem, 1.829rem + 0.952vw, 3.2rem);
+        max-width: 68rem;
+    }
+    .table {
+    }
+}
+
+
