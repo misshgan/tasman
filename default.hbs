@@ -11,7 +11,7 @@
     {{ghost_head}}
 
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}} {{#is 'about'}}about-template{{else is 'services'}}services-template{{else is 'case-studies'}}case-studies-template{{/is}}">
 
 {{> components/header}}
 
@@ -20,6 +20,8 @@
     {{{body}}}
 
 </main>
+
+{{> components/footer}}
 
 <script src="{{asset "built/index.js"}}" defer></script>
 
