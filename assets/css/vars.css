@@ -19,6 +19,8 @@
 
     --border-color-black: #1212121A;
     --border-color-cream: #FFF9EB66;
+    --border-color-cream-01: #FFF9EB1A;
+    --border-color-cream-02: #FFF9EB33;
 
     /* Fonts */
     --font-sans-serif: 'Helvetica', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
