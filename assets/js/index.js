@@ -3,16 +3,16 @@
 // Import CSS
 import "../css/index.css";
 
-function handleAdvantages() {
-    const advantages = document.querySelector(".js-advantages");
+function handleAccordion() {
+    const accordion = document.querySelector(".js-accordion");
 
-    if (!advantages) {
+    if (!accordion) {
         return;
     }
 
-    const buttons = advantages.querySelectorAll(".advantages__titles button");
-    const paragraphs = advantages.querySelectorAll(
-        ".advantages__descriptions .paragraph"
+    const buttons = accordion.querySelectorAll(".accordion__titles button");
+    const paragraphs = accordion.querySelectorAll(
+        ".accordion__descriptions .paragraph"
     );
 
     buttons.forEach((button, index) => {
@@ -28,7 +28,7 @@ function handleAdvantages() {
     });
 }
 
-handleAdvantages();
+handleAccordion();
 
 function handleDynamicIconsSwitch() {
     const section = document.querySelector(".how-we-work");
@@ -36,7 +36,6 @@ function handleDynamicIconsSwitch() {
     const icons = document.querySelectorAll(".how-we-work__icon");
 
     if (!section || cards.length !== icons.length) {
-        console.error("Section or number of cards/icons is mismatched!");
         return;
     }
 
@@ -95,6 +94,8 @@ handleDynamicIconsSwitch();
 function handleLogoScroll() {
     const track = document.querySelector(".icon-track");
 
+    if (!track) { return; }
+
     const icons = Array.from(track.children);
     icons.forEach((icon) => {
         const clone = icon.cloneNode(true);
@@ -116,3 +117,19 @@ function handleLogoScroll() {
 }
 
 handleLogoScroll();
+
+function handleFixedHeader() {
+    const header = document.querySelector('.js-fixed-header');
+
+    if (!header) { return; }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('moving')
+        } else {
+            header.classList.remove('moving')
+        }
+    })
+}
+
+handleFixedHeader();
