@@ -1,6 +1,6 @@
-<header class="header">
+<header class="header {{#is 'about,services,case-studies'}}js-fixed-header{{/is}}">
     <div class="wrapper">
-        {{#is 'index'}}
+        {{^is 'index'}}
             <a href="/">
                 {{> icons/logo classes='logo'}}
             </a>
