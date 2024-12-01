@@ -1,0 +1,102 @@
+.footer {
+    background-color: var(--color-cream);
+    padding: clamp(9.6rem, 7.886rem + 2.857vw, 12rem) 0 3.2rem;
+
+    .wrapper {
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        column-gap: clamp(10rem, 6.857rem + 5.238vw, 14.4rem);
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.4rem;
+
+        &:first-child {
+            margin-right: auto;
+            max-width: 33rem;
+        }
+
+        span {
+            font-family: var(--font-mono);
+            font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+            font-weight: 400;
+            letter-spacing: clamp(1.4px, 1.257rem + 0.238vw, 1.6px);
+            text-transform: uppercase;
+            opacity: 0.6;
+        }
+
+        p {
+            font-family: var(--font-sans-serif);
+            font-size: clamp(1.6rem, 1.314rem + 0.476vw, 2rem);
+            font-weight: 400;
+            line-height: 120%; /* 24px */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            display: flex;
+            flex-direction: column;
+
+            li a {
+                font-family: var(--font-mono);
+                font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+                font-weight: 400;
+                letter-spacing: clamp(1.4px, 1.257rem + 0.238vw, 1.6px);
+                text-transform: uppercase;
+                text-decoration: unset;
+            }
+
+            li a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__main + svg {
+        width: 100%;
+        height: auto;
+
+        margin-top: clamp(4.5rem, 2rem + 4.167vw, 8rem);
+    }
+
+    &__bottom {
+        margin-top: 5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            display: flex;
+            align-items: center;
+            column-gap: clamp(13.5rem, 10.5rem + 5vw, 17.7rem);
+        }
+
+        span {
+            opacity: 0.6;
+        }
+
+        ul li a {
+            font-family: var(--font-mono);
+            font-size: clamp(1.4rem, 1.257rem + 0.238vw, 1.6rem);
+            font-weight: 400;
+            letter-spacing: clamp(1.4px, 1.257rem + 0.238vw, 1.6px);
+            text-transform: uppercase;
+            text-decoration: unset;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    }
+}
